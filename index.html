@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Petit Café - Paris</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="./src/style.css" rel="stylesheet">
+    <script type="module" src="./src/main.js"></script>
+</head>
+<body class="bg-amber-50 min-w-[1200px]">
+    <nav class="bg-[#2C1810] text-amber-100 p-6 w-[1200px] mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="coffee" class="w-8 h-8"></i>
+                <span class="text-2xl font-serif">Le Petit Café</span>
+            </div>
+            <div class="flex gap-12 text-lg font-serif">
+                <a href="#accueil" class="hover:text-amber-300">Accueil</a>
+                <a href="#menu" class="hover:text-amber-300">Notre Menu</a>
+                <a href="#ambiance" class="hover:text-amber-300">L'Ambiance</a>
+                <a href="#contact" class="hover:text-amber-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="relative h-[600px] w-[1200px] mx-auto">
+        <div 
+            class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');"
+        ></div>
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <h1 class="font-serif text-6xl mb-6">Le Petit Café</h1>
+            <p class="text-2xl font-light max-w-2xl text-center leading-relaxed">
+                Une expérience authentique au cœur de Paris, où chaque tasse raconte une histoire
+            </p>
+        </div>
+    </section>
+
+    <section id="menu" class="bg-[#F5E6D3] w-[1200px] mx-auto p-16">
+        <h2 class="text-4xl font-serif text-center text-[#2C1810] mb-12">Notre Menu</h2>
+        <div class="grid grid-cols-2 gap-16" id="menu-items"></div>
+    </section>
+
+    <section id="ambiance" class="w-[1200px] mx-auto py-16">
+        <h2 class="text-4xl font-serif text-center text-[#2C1810] mb-12">L'Ambiance</h2>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="space-y-6 pr-8">
+                <p class="text-lg leading-relaxed p-4">
+                    Niché dans le cœur historique de Paris, Le Petit Café vous accueille dans une atmosphère chaleureuse et authentique. Nos murs en pierre apparente et notre mobilier vintage créent un cadre unique où le temps semble s'arrêter.
+                </p>
+                <p class="text-lg leading-relaxed p-4">
+                    Chaque matin, l'arôme envoûtant du café fraîchement torréfié se mêle aux effluves de nos viennoiseries artisanales, préparées sur place par notre chef pâtissier.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img 
+                    src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                    alt="Interior" 
+                    class="w-full h-[200px] object-cover rounded-lg"
+                />
+                <img 
+                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                    alt="Coffee" 
+                    class="w-full h-[200px] object-cover rounded-lg"
+                />
+                <img 
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                    alt="Latte art" 
+                    class="w-full h-[200px] object-cover rounded-lg"
+                />
+                <img 
+                    src="https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
+                    alt="Pastries" 
+                    class="w-full h-[200px] object-cover rounded-lg"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-[#2C1810] text-amber-100 w-[1200px] mx-auto p-16">
+        <h2 class="text-4xl font-serif text-center mb-12">Nous Trouver</h2>
+        <div class="grid grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center">
+                <i data-lucide="map-pin" class="w-8 h-8 mb-4"></i>
+                <h3 class="text-xl font-serif mb-2">Adresse</h3>
+                <p>15 Rue de la Paix</p>
+                <p>75002 Paris, France</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <i data-lucide="clock" class="w-8 h-8 mb-4"></i>
+                <h3 class="text-xl font-serif mb-2">Horaires</h3>
+                <p>Lundi - Vendredi: 7h - 20h</p>
+                <p>Samedi - Dimanche: 8h - 19h</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <i data-lucide="phone" class="w-8 h-8 mb-4"></i>
+                <h3 class="text-xl font-serif mb-2">Contact</h3>
+                <p>+33 1 23 45 67 89</p>
+                <p>contact@lepetitcafe.fr</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#2C1810] text-amber-100 p-6 w-[1200px] mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="coffee" class="w-6 h-6"></i>
+                <span class="font-serif">Le Petit Café</span>
+            </div>
+            <p class="text-sm">© <span id="current-year"></span> Le Petit Café. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
